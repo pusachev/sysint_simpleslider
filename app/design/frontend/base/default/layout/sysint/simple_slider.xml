@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Pavel Usachev <webcodekeeper@hotmail.com>
+ * @copyright Copyright (c) 2016, Pavel Usachev
+ */
+-->
+<layout>
+    <cms_index_index>
+        <reference name="content">
+            <block type="sysint_simpleslider/awesome_slider" name="slider" template="sysint/simpleslider/slider.phtml" />
+        </reference>
+    </cms_index_index>
+</layout>

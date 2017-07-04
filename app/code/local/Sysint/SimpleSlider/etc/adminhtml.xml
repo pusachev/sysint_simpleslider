@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sysint_simpleslider translate="title" module="sysint_simpleslider">
+            <title>Sysint SimpleSlider</title>
+            <sort_order>10</sort_order>
+            <action>adminhtml/system_config/edit/section/sysint_simpleslider</action>
+            <children>
+                <saysint_simpleslider_grid translate="title" module="sysint_simpleslider">
+                    <title>Slider</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/slider</action>
+                </saysint_simpleslider_grid>
+                <sysint_simpleslider_config translate="title" module="sysint_simpleslider">
+                    <title>Config</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/system_config/edit/section/sysint_simpleslider</action>
+                </sysint_simpleslider_config>
+            </children>
+        </sysint_simpleslider>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sysint_simpleslider translate="title" module="sysint_simpleslider">
+                                        <title>SimpleSlider</title>
+                                        <sort_order>0</sort_order>
+                                    </sysint_simpleslider>
+                                    <sysint_simpleslider_grid translate="title" module="sysint_simpleslider">
+                                        <title>SimpleSlider Grid</title>
+                                        <sort_order>1</sort_order>
+                                    </sysint_simpleslider_grid>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

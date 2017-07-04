@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_slider_index>
+        <reference name="content">
+            <block type="sysint_simpleslider/adminhtml_slider" name="slider.grid_container"/>
+        </reference>
+    </adminhtml_slider_index>
+
+    <adminhtml_slider_new>
+        <update handle="adminhtml_slider_edit"/>
+    </adminhtml_slider_new>
+
+    <adminhtml_slider_edit>
+        <reference name="content">
+            <block type="sysint_simpleslider/adminhtml_slider_edit" name="slider.edit"/>
+        </reference>
+        <reference name="left">
+            <block type="sysint_simpleslider/adminhtml_slider_edit_tabs" name="slider.tabs" />
+        </reference>
+    </adminhtml_slider_edit>
+</layout>

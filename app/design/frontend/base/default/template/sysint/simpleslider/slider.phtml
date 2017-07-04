@@ -1,0 +1,22 @@
+<?php
+$collection = $this->getSlides();
+?>
+<div class="slideshow-container">
+    <ul class="slideshow">
+        <?php foreach($collection as $item): ?>
+        <li>
+            <a href="#"><img src="http://spalah.dev/media/wysiwyg/slide-3.jpg<?php //echo $item->getImage()?>" alt="<?php //echo $item->getAlt(); ?>" /></a>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+    <div class="slideshow-pager"></div>
+    <span class="slideshow-prev"></span>
+    <span class="slideshow-next"></span>
+</div>
+<ul>
+    <?php  foreach ($this->test() as $item): ?>
+        <?php foreach ($item as $currency => $price): ?>
+            <li><?php printf("%s: %s", $currency, $price); ?></li>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+</ul>
